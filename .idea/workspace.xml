@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9870ab34-ddb5-4311-8761-cbe2b90f07dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.rb" afterPath="$PROJECT_DIR$/notes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exercise_files.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="notes.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9315069" vertical-offset="3258" max-vertical-offset="3975">
-              <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8173516" vertical-offset="3453" max-vertical-offset="4170">
+              <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -367,8 +366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9315069" vertical-offset="3258" max-vertical-offset="3975">
-          <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8173516" vertical-offset="3453" max-vertical-offset="4170">
+          <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
           <folding />
         </state>
       </provider>

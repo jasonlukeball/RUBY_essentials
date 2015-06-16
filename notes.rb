@@ -233,14 +233,6 @@
 
 
 # --------------------------
-# BOOLEAN
-# --------------------------
-
-# True/False
-
-
-
-# --------------------------
 # OPERATORS
 # --------------------------
 
@@ -256,8 +248,25 @@
   &&      And
   ||      Or
 
+  Results are Boolean true/false
+
 =end
 
 
 
+my_array = [1,2,3]
+my.array.empty?
+# Returns false
+
+my_array.include?(2)
+# Returns true
+
+x = nil
+x.nil?
+# Returns True
+
+my_hash = {"first_name" => "jason"}
+my_hash.has_key?("first_name")
+# Does the hash contain the key?
+# Returns true
 
