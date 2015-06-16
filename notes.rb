@@ -255,7 +255,7 @@
 
 
 my_array = [1,2,3]
-my.array.empty?
+my_array.empty?
 # Returns false
 
 my_array.include?(2)
