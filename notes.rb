@@ -184,3 +184,80 @@
 
 
 
+# --------------------------
+# HASHES
+# --------------------------
+
+=begin
+
+  my_hash = {
+    "first_name"  =>  "jason",
+    "last_name"   =>  "ball",
+    "age"         =>  33
+  }
+
+  puts my_hash
+
+=end
+
+
+# my_hash.keys
+# Returns all key names for this hash
+
+# my_hash.length
+# my_hash.size
+# Count of key value pairs
+
+# my_hash.to_a
+# Convert hash to an array
+
+# my_hash.clear
+# my_hash = {}
+# Clear hash
+
+# my_hash["DOB"] = "21/11/1981"
+# Add a new value to the hash
+
+
+
+# --------------------------
+# SYMBOLS
+# --------------------------
+
+# A symbol is a label used to represent a piece of data
+# Symbols are only stored in memory one time, any reuse always writes to the same block in memory
+
+# :my_symbol
+# Create a symbol
+
+
+
+# --------------------------
+# BOOLEAN
+# --------------------------
+
+# True/False
+
+
+
+# --------------------------
+# OPERATORS
+# --------------------------
+
+=begin
+
+  ==      Equal To
+  <       Less Than
+  >       Greater Than
+  <=      Less Than or Equal To
+  =>      Greater Than or Equal To
+  !       Not
+  !       Not Equal
+  &&      And
+  ||      Or
+
+=end
+
+
+
+
