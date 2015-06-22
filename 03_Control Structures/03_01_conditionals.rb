@@ -5,6 +5,7 @@
 # irb
 name = "Kevin"
 # => "Kevin"
+
 if name == "Bob"
   puts "Found Bob!"
 else
@@ -12,6 +13,7 @@ else
 end
 # Not Bob...
 # => nil
+
 if name == "Kevin"
   puts "Found Kevin!"
 else
@@ -19,6 +21,7 @@ else
 end
 # Found Kevin!
 # => nil
+
 if name == "Bob"
   puts "Found him"
 elsif name == "Mary"
@@ -28,9 +31,11 @@ else
 end
 # Not Bob or Mary
 # => nil
+
 puts "This is Kevin" if name == "Kevin"
 # This is Kevin
 # => nil
+
 puts "This is Kevin" if name == "bob"
 # => nil
 quit

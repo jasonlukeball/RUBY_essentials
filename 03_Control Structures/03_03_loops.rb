@@ -5,11 +5,13 @@
 # irb --simple-prompt
 x = 0
 # => 0
+
 loop do
   x += 2
   break if x >= 20
   puts x
 end
+
 # 2
 # 4
 # 6
@@ -20,14 +22,17 @@ end
 # 16
 # 18
 # => nil
+
 x = 0
 # => 0
+
 loop do
   x += 2
   break if x >= 20
   next if x == 6
   puts x
 end
+
 # 2
 # 4
 # 8
@@ -37,12 +42,15 @@ end
 # 16
 # 18
 # => nil
+
 x = 0
 # => 0
-while x < 20
-  x += 2
+
+while x <= 10
   puts x
+  x += 1
 end
+
 # 2
 # 4
 # 6
