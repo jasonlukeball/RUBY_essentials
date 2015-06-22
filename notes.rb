@@ -466,3 +466,37 @@ end
 # --------------------------
 
 
+# UPTO ITERATION
+# ----------------
+
+1.upto(5) do |num|
+  puts "Hello " + num.to_s
+end
+# Hello 1
+# Hello 2
+# Hello 3
+# Hello 4
+# Hello 5
+# => 1
+
+
+# EACH ITERATION
+# ----------------
+
+names = ["Jason", "Msh", "Fiona"]
+
+names.each do |this_name|
+  puts "Hello #{this_name}"
+end
+
+
+# FOR ITERATION
+# ----------------
+
+for this_name in names
+  puts "Hello #{this_name}"
+end
+
+
+
+

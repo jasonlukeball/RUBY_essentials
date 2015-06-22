@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9870ab34-ddb5-4311-8761-cbe2b90f07dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/03_Control Structures/03_01_conditionals.rb" afterPath="$PROJECT_DIR$/03_Control Structures/03_01_conditionals.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/03_Control Structures/03_02_conditionals2.rb" afterPath="$PROJECT_DIR$/03_Control Structures/03_02_conditionals2.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/03_Control Structures/03_03_loops.rb" afterPath="$PROJECT_DIR$/03_Control Structures/03_03_loops.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/03_Control Structures/03_04_iterators.rb" afterPath="$PROJECT_DIR$/03_Control Structures/03_04_iterators.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.rb" afterPath="$PROJECT_DIR$/notes.rb" />
     </list>
     <ignored path="exercise_files.iws" />
@@ -33,18 +29,18 @@
       <file leaf-file-name="notes.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9415449" vertical-offset="6556" max-vertical-offset="7110">
-              <caret line="407" column="0" selection-start-line="407" selection-start-column="0" selection-end-line="407" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.9373695" vertical-offset="7081" max-vertical-offset="7620">
+              <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03_03_loops.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03_Control Structures/03_03_loops.rb">
+      <file leaf-file-name="03_04_iterators.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03_Control Structures/03_04_iterators.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="1065">
-              <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="585">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -411,14 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03_Control Structures/03_04_iterators.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97077245" vertical-offset="0" max-vertical-offset="585">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03_Control Structures/03_03_loops.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="1065">
@@ -427,10 +415,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/03_Control Structures/03_04_iterators.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="585">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9415449" vertical-offset="6556" max-vertical-offset="7110">
-          <caret line="407" column="0" selection-start-line="407" selection-start-column="0" selection-end-line="407" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9373695" vertical-offset="7081" max-vertical-offset="7620">
+          <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
           <folding />
         </state>
       </provider>
