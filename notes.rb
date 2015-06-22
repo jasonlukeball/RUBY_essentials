@@ -270,3 +270,46 @@ my_hash.has_key?("first_name")
 # Does the hash contain the key?
 # Returns true
 
+
+# --------------------------
+# RANGES
+# --------------------------
+
+y = 1...10
+# => 1...10
+
+[*y]
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+alpha = 'a'...'z'
+# => a...z
+
+[*alpha]
+# => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y"]
+
+
+
+# --------------------------
+# CONSTANTS
+# --------------------------
+
+# Are very similar to variables
+# Constants are named with CAPITALIZATION
+# Anything beginning with a capital letter is considered a constant
+
+hello = "hi there"
+# variable
+
+HELLO = "hi there"
+# constant
+
+
+
+# --------------------------
+# --------------------------
+# CONTROL STRUCTURES
+# --------------------------
+# --------------------------
+
+
+

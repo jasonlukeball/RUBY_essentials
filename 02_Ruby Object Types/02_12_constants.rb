@@ -5,21 +5,29 @@
 # irb
 test = 1
 # => 1
+
 TEST = 2
 # => 2
+
 test
 # => 1
+
 TEST
 # => 2
+
 Hello = 10
 # => 10
+
 test = 100
 # => 100
+
 TEST = 100
 # (irb):7: warning: already initialized constant TEST
 # => 100
+
 TEST
 # => 100
+
 Hello = 20
 # (irb):9: warning: already initialized constant Hello
 # => 20
