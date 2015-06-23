@@ -499,4 +499,30 @@ end
 
 
 
+# --------------------------
+# --------------------------
+# CODE BLOCKS
+# --------------------------
+# --------------------------
+
+
+
+# Anything between do and end is a multi-line code block
+1.upto(5) do | number |
+  puts number
+end
+
+
+# Single line code block
+1.upto(5){ |number| puts number }
+
+
+# variables created within the bloc are not accessible outside that bloc
+# eg cannot use 'number' here, it will fail
+# variables created within a block are called 'block variables'
+# inside a bloc you can still use 'local variables' which were created outside the bloc
+
+
+
+
 
