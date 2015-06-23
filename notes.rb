@@ -523,6 +523,98 @@ end
 # inside a bloc you can still use 'local variables' which were created outside the bloc
 
 
+# FIND
+# --------------------------
+
+names_array = ["Jason", "Msh", "Fiona", "Jason"]
+
+
+# find
+# ---------
+names_array.find { |this_name| this_name == "Jason" }
+# => "Jason"
+
+
+# find_all
+# ---------
+names_array.find_all{|this_name| this_name == "Jason"}
+# => ["Jason", "Jason"]
+
+names_array.find_all{|this_name| this_name != nil}
+# => ["Jason", "Msh", "Fiona", "Jason"]
+
+
+# any?
+# ---------
+names_array.any?{|this_name| this_name == "Jason"}
+# returns a boolean
+# => true
+
+
+# all?
+# ---------
+names_array.all? {|this_name| this_name == "Jason"}
+# Do all names in names_array == "Jason" ?
+# returns a boolean
+# => false
+
+
+# delete_if
+names_array.delete_if{|this_name| this_name == "Jason"}
+# removes all "Jason" objects from the array
+
+
+# MERGE
+# --------------------------
+# Used for merging hashes together
+
+hash1 = { "a" => 111, "b" => 222 }
+# => {"a"=>111, "b"=>222}
+hash2 = { "b" => 333, "c" => 444 }
+# => {"b"=>333, "c"=>444}
+
+hash1.merge(hash2)
+# Takes both hashes and merges them together
+# If there are conflicting keys ("b" in hash2) the second one will win
+# => {"a"=>111, "b"=>333, "c"=>444}
+
+# Conflict resolution blocks
+hash1.merge(hash2) {|key,old,new| new}
+# new wins
+hash1.merge(hash2) {|key,old,new| new}
+# old wins
+
+hash1.merge(hash2) do |key, old, new|
+  # Start conflict resolution
+  if old < new
+    old
+  else
+    new
+  end
+end
+# old ("b" => 222) is less than new ("b" => 333)
+# old wins
+
+
+# none of this actually modifies the original hashes, it returns a new hash
+# if we want to actually update the hash use a ! as below
+hash1.merge!(hash2)
+
+
+# COLLECT
+# --------------------------
+
+
+
+
+# SORT
+# --------------------------
+
+
+
+
+# INJECT
+# --------------------------
 
 
 
