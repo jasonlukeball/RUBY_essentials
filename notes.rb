@@ -601,8 +601,15 @@ end
 hash1.merge!(hash2)
 
 
-# COLLECT
+# COLLECT (also known as 'map')
 # --------------------------
+
+array = [1,2,3,4,5]
+# => [1, 2, 3, 4, 5]
+array.collect {|index| index* 10 }
+# => [10, 20, 30, 40, 50]
+# Takes all items in array and multiplies
+# returns a new array, does not alter original
 
 
 

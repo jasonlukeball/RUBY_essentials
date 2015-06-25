@@ -15,13 +15,13 @@ array
 array.collect {|i| i * 40 }
 # => [40, 80, 120, 160, 200]
 
-['apple', 'banana', 'orange'].map {|fruit| fruit.capitalize }
+['apple', 'banana', 'orange'].collect {|fruit| fruit.capitalize }
 # => ["Apple", "Banana", "Orange"]
 
-['apple', 'banana', 'orange'].map {|fruit| fruit.capitalize if fruit == 'banana' }
+['apple', 'banana', 'orange'].collect {|fruit| fruit.capitalize if fruit == 'banana' }
 # => [nil, "Banana", nil]
 
-['apple', 'banana', 'orange'].map do |fruit|
+['apple', 'banana', 'orange'].collect do |fruit|
   if fruit == 'banana'
     fruit.capitalize
   else
@@ -36,19 +36,19 @@ end
 hash = {"a" => 111, "b" => 222, "c" => 333}
 # => {"a"=>111, "b"=>222, "c"=>333}
 
-hash.map {|key,value| key }
+hash.collect {|key,value| key }
 # => ["a", "b", "c"]
 
-hash.map {|key,value| value * 20 }
+hash.collect {|key,value| value * 20 }
 # => [2220, 4440, 6660]
 
-hash.map {|key,value| "#{k}: #{value * 20}" }
+hash.collect {|key,value| "#{key}: #{value * 20}" }
 # => ["a: 2220", "b: 4440", "c: 6660"]
 
-['apple', 'banana', 'orange'].map {|fruit| fruit.capitalize }
+['apple', 'banana', 'orange'].collect {|fruit| fruit.capitalize }
 # => ["Apple", "Banana", "Orange"]
 
-['apple', 'banana', 'orange'].map {|fruit| puts fruit.capitalize }
+['apple', 'banana', 'orange'].collect {|fruit| puts fruit.capitalize }
 # Apple
 # Banana
 # Orange
@@ -58,7 +58,7 @@ puts 123
 # 123
 # => nil
 
-new_array = ['apple', 'banana', 'orange'].map {|fruit| puts fruit.capitalize }
+new_array = ['apple', 'banana', 'orange'].collect {|fruit| puts fruit.capitalize }
 # Apple
 # Banana
 # Orange
@@ -67,7 +67,7 @@ new_array = ['apple', 'banana', 'orange'].map {|fruit| puts fruit.capitalize }
 new_array
 # => [nil, nil, nil]
 
-new_array = ['apple', 'banana', 'orange'].map {|fruit| fruit.capitalize }
+new_array = ['apple', 'banana', 'orange'].collect {|fruit| fruit.capitalize }
 # => ["Apple", "Banana", "Orange"]
 
 new_array
