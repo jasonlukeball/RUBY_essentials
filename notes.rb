@@ -690,9 +690,28 @@ hash.sort {|item1,item2| item1[1] <=> item2[1]}
 
 
 
-
 # INJECT
 # --------------------------
+
+# Inject means accumulate
+# Inject uses a block variable as a place to put the accumulation, most people name this 'memo'
+
+
+(1..10).inject{|memo,number| memo + number}
+# 1+2+3+4+5+6+7+8+9+10 = 55
+# => 55
+
+fruits = ['apple', 'pear', 'banana', 'plum']
+# => ["apple", "pear", "banana", "plum"]
+
+longest_word = fruits.inject do |memo, fruit|
+  if memo.length > fruit.length
+    memo
+  else
+    fruit
+  end
+end
+# => "banana"
 
 
 
