@@ -655,6 +655,40 @@ fruits.sort {|fruit1,fruit2| fruit1.length <=> fruit2.length}.reverse
 # Sorts numerically by character length (high to low)
 # => ["pineapple", "orange", "banana", "apple", "pear"]
 
+fruits.sort_by { |fruit| fruit.length}
+# Another shorthand way to sort by length
+
+
+# NONE OF THIS AFFECTS THE ORIGINAL fruits ARRAY
+# TO FORCE UPDATE TO ARRAY ADD THE ! CHARACTER
+
+fruits
+# => ["banana", "apple", "orange", "pear", "pineapple"]
+
+fruits.sort_by! { |fruit| fruit.length}
+# => ["pear", "apple", "banana", "orange", "pineapple"]
+
+fruits
+# => ["pear", "apple", "banana", "orange", "pineapple"]
+
+
+# TO SORT HASHES, RUBY TURNS THE HASH INTO AN ARRAY
+
+hash = {"c" => 222, "a" => 555, "d" => 111, "b" => 333}
+
+hash.sort
+# Returns an Array
+# => [["a", 555], ["b", 333], ["c", 222], ["d", 111]]
+
+hash.sort {|item1,item2| item1[0] <=> item2[0]}
+# Sorts the hash by their keys alphabetically
+# => [["a", 555], ["b", 333], ["c", 222], ["d", 111]]
+
+hash.sort {|item1,item2| item1[1] <=> item2[1]}
+# Sorts the hash by their values
+# => [["d", 111], ["c", 222], ["b", 333], ["a", 555]]
+
+
 
 
 # INJECT
