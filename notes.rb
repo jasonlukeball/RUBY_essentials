@@ -617,6 +617,43 @@ array.collect {|index| index* 10 }
 # SORT
 # --------------------------
 
+# <=>
+# Comparison Operator
+# Used to compare two values
+
+# 1 <=> 2
+# Returns -1
+# Results are:
+# -1  (Less than)
+# 0   (Equal to)
+# 1   (Greater than)
+
+array = [3,1,5,2,4]
+
+array.sort
+# => [1, 2, 3, 4, 5]
+
+array.sort.reverse
+# => [5, 4, 3, 2, 1]
+
+
+fruits = ['banana', 'apple', 'orange', 'pear', 'pineapple']
+
+fruits.sort
+# Sorts Alphabetically (Ascending)
+# => ["apple", "banana", "orange", "pear", "pineapple"]
+
+fruits.sort.reverse
+# Sorts Alphabetically (Descending)
+# => ["pineapple", "pear", "orange", "banana", "apple"]
+
+fruits.sort {|fruit1,fruit2| fruit1.length <=> fruit2.length}
+# Sorts numerically by character length (low to high)
+# => ["pear", "apple", "orange", "banana", "pineapple"]
+
+fruits.sort {|fruit1,fruit2| fruit1.length <=> fruit2.length}.reverse
+# Sorts numerically by character length (high to low)
+# => ["pineapple", "orange", "banana", "apple", "pear"]
 
 
 
