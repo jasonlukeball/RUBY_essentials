@@ -31,15 +31,19 @@ names_array = ["Jason", "Msh", "Fiona", "Jason"]
 # find
 # ---------
 names_array.find { |this_name| this_name == "Jason" }
+# Find values in array when name == Jason
+# Returns 1 result
 # => "Jason"
 
 
 # find_all
 # ---------
 names_array.find_all{|this_name| this_name == "Jason"}
+# Returns many results
 # => ["Jason", "Jason"]
 
 names_array.find_all{|this_name| this_name != nil}
+# Find all values that are not nil
 # => ["Jason", "Msh", "Fiona", "Jason"]
 
 
@@ -61,6 +65,8 @@ names_array.all? {|this_name| this_name == "Jason"}
 # delete_if
 names_array.delete_if{|this_name| this_name == "Jason"}
 # removes all "Jason" objects from the array
+# Returns the modified array
+# => ["Msh", "Fiona"]
 
 
 # MERGE
@@ -80,7 +86,7 @@ hash1.merge(hash2)
 # Conflict resolution blocks
 hash1.merge(hash2) {|key,old,new| new}
 # new wins
-hash1.merge(hash2) {|key,old,new| new}
+hash1.merge(hash2) {|key,old,new| old}
 # old wins
 
 hash1.merge(hash2) do |key, old, new|
@@ -152,6 +158,7 @@ fruits.sort {|fruit1,fruit2| fruit1.length <=> fruit2.length}
 
 fruits.sort {|fruit1,fruit2| fruit1.length <=> fruit2.length}.reverse
 # Sorts numerically by character length (high to low)
+# Sorts numerically by character length (low to high), then reverses
 # => ["pineapple", "orange", "banana", "apple", "pear"]
 
 fruits.sort_by { |fruit| fruit.length}
@@ -176,6 +183,7 @@ fruits
 hash = {"c" => 222, "a" => 555, "d" => 111, "b" => 333}
 
 hash.sort
+# Sorts on the keys, alphabetically
 # Returns an Array
 # => [["a", 555], ["b", 333], ["c", 222], ["d", 111]]
 
@@ -194,6 +202,7 @@ hash.sort {|item1,item2| item1[1] <=> item2[1]}
 
 # Inject means accumulate
 # Inject uses a block variable as a place to put the accumulation, most people name this 'memo'
+# memo is just a placeholder to hold the accumulation
 
 
 (1..10).inject{|memo,number| memo + number}

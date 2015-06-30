@@ -52,6 +52,8 @@ unless name == "Jason"
   puts "Hello #{name}"
 end
 
+# This returns nil because name does == Jason
+
 # Could also be written as so
 =begin
 if name != "Jason"
