@@ -1,6 +1,9 @@
 def welcome
-	puts "Hello World!"
+  message = "Hello Ruby!"
+	puts message
 end
+
+
 
 def add
 	puts 1 + 1
@@ -15,6 +18,7 @@ def longest_word
   puts longest_word
 end
 
+
 # Method names can have question marks in them
 # Useful for tests and booleans
 def over_five?
@@ -27,3 +31,5 @@ welcome
 add
 longest_word
 over_five?
+
+

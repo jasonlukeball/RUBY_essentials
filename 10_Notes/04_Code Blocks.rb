@@ -21,7 +21,7 @@ end
 # variables created within a block are called 'block variables'
 # inside a bloc you can still use 'local variables' which were created outside the bloc
 
-
+# --------------------------
 # FIND
 # --------------------------
 
@@ -69,6 +69,7 @@ names_array.delete_if{|this_name| this_name == "Jason"}
 # => ["Msh", "Fiona"]
 
 
+# --------------------------
 # MERGE
 # --------------------------
 # Used for merging hashes together
@@ -105,9 +106,9 @@ end
 # if we want to actually update the hash use a ! as below
 hash1.merge!(hash2)
 
-
+# ------------------------------
 # COLLECT (also known as 'map')
-# --------------------------
+# ------------------------------
 
 array = [1,2,3,4,5]
 # => [1, 2, 3, 4, 5]
@@ -118,7 +119,7 @@ array.collect {|index| index* 10 }
 
 
 
-
+# --------------------------
 # SORT
 # --------------------------
 
@@ -196,7 +197,7 @@ hash.sort {|item1,item2| item1[1] <=> item2[1]}
 # => [["d", 111], ["c", 222], ["b", 333], ["a", 555]]
 
 
-
+# --------------------------
 # INJECT
 # --------------------------
 

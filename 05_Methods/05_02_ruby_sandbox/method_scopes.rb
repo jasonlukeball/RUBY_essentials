@@ -1,7 +1,9 @@
-value = 7 
+value = 7
+
+message = "Hello Ruby!"
 
 def welcome
-	puts "Hello World!"
+	puts message
 end
 
 def add
@@ -33,7 +35,7 @@ longest_word
 over_five?
 
 # outputs the original, unchanged value
-puts value
+puts "value == #{value}"
 
 # Be careful about naming methods and local variables.
 # They can look the same.

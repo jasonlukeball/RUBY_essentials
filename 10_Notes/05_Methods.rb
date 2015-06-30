@@ -25,6 +25,7 @@ hello_ruby
 # => nil
 
 
+# --------------------------
 # Including files
 # --------------------------
 
@@ -37,4 +38,35 @@ load "methods.rb"
 # returns true if it has successfully loaded
 
 
+# --------------------------
+# Variable Scope
+# --------------------------
 
+# Global      $my_variable
+# Class       @@my_variable
+# Instance    @my_variable
+# Local       my_variable
+# Block       my_variable
+
+
+def welcome
+  # The local variable "message" only has scope inside the method "welcome"
+  # It cannot be used outside the method
+  message = "Hello Ruby!"
+  puts message
+end
+
+puts message
+# This will return an error
+# NameError: undefined local variable or method `message' for main:Object
+
+
+# If I want to use a variable from outside the scope I can use an Instance Variable
+
+@message = "Hello!"
+
+def say_hello
+  puts @message
+end
+
+say_hello
