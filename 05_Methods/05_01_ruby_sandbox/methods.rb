@@ -1,5 +1,5 @@
 def welcome
-	puts "Hello World!"
+	puts "Hello Ruby!"
 end
 
 def add
@@ -18,6 +18,24 @@ end
 # Method names can have question marks in them
 # Useful for tests and booleans
 def over_five?
-	value = 3
-	puts value > 5 ? 'Over 5' : 'Not over 5'
+	value = 30
+	puts value > 5 ? 'Value IS Over 5' : 'Value is NOT over 5'
 end
+
+=begin
+  print "welcome returned: "
+  welcome
+  puts ""
+
+  print "add returned: "
+  add
+  puts ""
+
+  print "longest_word returned: "
+  longest_word
+  puts ""
+
+  print "over_five? returned: "
+  over_five?
+  puts ""
+=end
