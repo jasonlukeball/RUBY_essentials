@@ -26,7 +26,7 @@ hello_ruby
 
 
 # --------------------------
-# Including files
+# INCLUDING FILES
 # --------------------------
 
 require "methods.rb"
@@ -39,7 +39,7 @@ load "methods.rb"
 
 
 # --------------------------
-# Variable Scope
+# VARIABLE SCOPE
 # --------------------------
 
 # Global      $my_variable
@@ -70,3 +70,40 @@ def say_hello
 end
 
 say_hello
+
+
+
+# --------------------------
+# ARGUMENTS
+# --------------------------
+
+# Arguments are a comma-separated list of values that are passed into methods
+
+# Methods with arguments typically use parentheses.
+# Methods without arguments typically do not.
+# Parentheses are optional in both cases.
+
+
+def say_something(the_thing)
+  puts the_thing
+end
+
+say_something("I'm the argument")
+# An argument is required, if not provided you'll get an error
+
+# ArgumentError: wrong number of arguments (0 for 1)
+# from (irb):118:in `say_something'
+#         from (irb):122
+#         from /Users/jason_ball/.rvm/rubies/ruby-2.2.1/bin/irb:11:in `<main>'
+
+
+# Multiple arguments are separated via commas
+
+def addition(arg1,arg2)
+  puts (arg1 + arg2)
+end
+
+addition(100,20)
+# => 120
+
+
