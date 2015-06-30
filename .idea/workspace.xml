@@ -4,7 +4,6 @@
     <list default="true" id="9870ab34-ddb5-4311-8761-cbe2b90f07dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/10_Notes/05_Methods.rb" afterPath="$PROJECT_DIR$/10_Notes/05_Methods.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/05_Methods/05_03_ruby_sandbox/arguments.rb" afterPath="$PROJECT_DIR$/05_Methods/05_03_ruby_sandbox/arguments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exercise_files.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,18 +34,18 @@
       <file leaf-file-name="05_Methods.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10_Notes/05_Methods.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="1725">
-              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="1950">
+              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arguments.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/05_Methods/05_03_ruby_sandbox/arguments.rb">
+      <file leaf-file-name="argument_defaults.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/05_Methods/05_04_ruby_sandbox/argument_defaults.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5945946" vertical-offset="0" max-vertical-offset="570">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="555">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,8 +90,9 @@
         <option value="$PROJECT_DIR$/05_Methods/05_02_ruby_sandbox/methods.rb" />
         <option value="$PROJECT_DIR$/05_Methods/05_02_ruby_sandbox/method_scopes.rb" />
         <option value="$PROJECT_DIR$/10_Notes/04_Code Blocks.rb" />
-        <option value="$PROJECT_DIR$/10_Notes/05_Methods.rb" />
         <option value="$PROJECT_DIR$/05_Methods/05_03_ruby_sandbox/arguments.rb" />
+        <option value="$PROJECT_DIR$/10_Notes/05_Methods.rb" />
+        <option value="$PROJECT_DIR$/05_Methods/05_04_ruby_sandbox/argument_defaults.rb" />
       </list>
     </option>
   </component>
@@ -186,7 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="05_03_ruby_sandbox" />
+              <option name="myItemId" value="05_04_ruby_sandbox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,14 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_Methods/05_04_ruby_sandbox/argument_defaults.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="851">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/07_Modules/07_01_ruby_sandbox/classes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15393655" vertical-offset="559" max-vertical-offset="1410">
@@ -737,18 +729,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10_Notes/05_Methods.rb">
+    <entry file="file://$PROJECT_DIR$/05_Methods/05_03_ruby_sandbox/arguments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="1725">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_Methods/05_03_ruby_sandbox/arguments.rb">
+    <entry file="file://$PROJECT_DIR$/10_Notes/05_Methods.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5945946" vertical-offset="0" max-vertical-offset="570">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="1950">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_Methods/05_04_ruby_sandbox/argument_defaults.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="555">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

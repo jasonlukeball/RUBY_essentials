@@ -89,12 +89,16 @@ def say_something(the_thing)
 end
 
 say_something("I'm the argument")
+# => "I'm the argument"
+
+say_something()
 # An argument is required, if not provided you'll get an error
 
 # ArgumentError: wrong number of arguments (0 for 1)
 # from (irb):118:in `say_something'
 #         from (irb):122
 #         from /Users/jason_ball/.rvm/rubies/ruby-2.2.1/bin/irb:11:in `<main>'
+
 
 
 # Multiple arguments are separated via commas
@@ -107,3 +111,15 @@ addition(100,20)
 # => 120
 
 
+# Argument defaults are used so that there is a default behaviour when calling a method which requires an argument
+# And we dont give it one
+
+def say_something2(thing_to_say = "Hello")
+  puts thing_to_say
+end
+
+say_something2()
+# => Hello
+
+say_something2("Hi There")
+# => Hi There
