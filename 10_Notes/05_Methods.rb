@@ -129,3 +129,45 @@ say_something2("Hi There")
 # RETURN VALUES
 # --------------------------
 
+# Used to get values out of methods
+# All methods have a return value, even if it is just nil by default
+# There is only ever one return value that comes back
+
+def say_something3
+  puts "This is the puts string"
+  # Return value (do not need to say 'return')
+  return "This is the return value"
+  # Return could also be written as
+  # "This is the return value" (no return command)
+end
+
+say_something3
+
+
+def over_five?(value=nil)
+  return "Exactly 5" if value.to_i == 5
+  if value.to_i > 5
+    return "Over 5"
+  else
+    return "Under 5"
+  end
+end
+
+over_five?(100)
+# => "Over 5"
+
+over_five?(5)
+# => "Exactly 5"
+
+
+# You can return multiple values in a single return
+# Multiple values must be returned in a single object, such an an array
+
+def multiple_value_return
+  value1 = "This is Value1"
+  value2 = "This is Value2"
+  return [value1,value2]
+end
+
+
+

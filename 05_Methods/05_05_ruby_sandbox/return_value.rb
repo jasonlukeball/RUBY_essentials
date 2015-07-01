@@ -1,6 +1,7 @@
 
 def welcome(name="World")
 	puts "Hello #{name}!"
+  return 1 + 1
 end
 
 def add(n1=0, n2=0)
@@ -11,11 +12,15 @@ def longest_word(words=[])
   longest_word = words.inject do |memo,word|
     memo.length > word.length ? memo : word
   end
-  puts longest_word
+  return longest_word
 end
 
 def over_five?(value=nil)
-	puts value.to_i > 5 ? 'Over 5' : 'Not over 5'
+	if value.to_i > 5
+    return "Over 5"
+  else
+    return "Under 5"
+  end
 end
 
 welcome("Mary")
