@@ -132,6 +132,7 @@ say_something2("Hi There")
 # Used to get values out of methods
 # All methods have a return value, even if it is just nil by default
 # There is only ever one return value that comes back
+# Using returns, exits the method
 
 def say_something3
   puts "This is the puts string"
@@ -168,6 +169,65 @@ def multiple_value_return
   value2 = "This is Value2"
   return [value1,value2]
 end
+
+
+
+# ---------------------------
+# OPERATORS ARE ALSO METHODS
+# ---------------------------
+
+
+puts 8 + 2
+# => 10
+puts 8.+(2)
+# => 10
+
+puts 8 - 2
+# => 6
+puts 8.-(2)
+# => 6
+
+
+puts 8 * 2
+# => 16
+puts 8.*(2)
+# => 16
+
+
+puts 8 / 2
+# => 4
+puts 8./(2)
+# => 4
+
+puts 8 ** 2
+# => 64
+puts 8.**(2)
+# => 64
+
+
+array1 = [1,2,3]
+puts array1.inspect
+
+array2 = [1,2,3]
+puts array2.inspect
+
+array1 << 4
+puts array1.inspect
+
+array2.<<(4)
+puts array2.inspect
+
+array1[2]
+puts array1.inspect
+
+array2.[](2)
+puts array2.inspect
+
+array1[2] = 'x'
+puts array1.inspect
+
+array2.[]=(2, 'x')
+puts array2.inspect
 
 
 
