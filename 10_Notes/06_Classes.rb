@@ -79,7 +79,7 @@ cow.make_noise.upcase
 # Attributes are like fields
 
 
-# Instance variables ( @variable ) are uses to store attributes of objects
+# Instance variables ( @variable ) are used to store attributes of objects
 
 
 
