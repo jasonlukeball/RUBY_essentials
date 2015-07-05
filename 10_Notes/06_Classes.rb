@@ -57,6 +57,29 @@ cow.make_noise.upcase
 # Objects 'carry around' their classes code
 
 
+# -----------------------------
+# INSTANCES
+# -----------------------------
+
+# An instance is an occurrence of a class
+# An object that has been created from a class
+
+# Animal.new created an instance of the Animal Class
+
+
+
+# -----------------------------
+# ATTRIBUTES
+# -----------------------------
+
+# Attributes are values that persist inside of an object/instance of a class
+
+# Class is like a table definition (but way more than that)
+# Instance is like a record
+# Attributes are like fields
+
+
+# Instance variables ( @variable ) are uses to store attributes of objects
 
 
 
