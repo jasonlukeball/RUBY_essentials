@@ -113,10 +113,37 @@ puts cow.make_noise
 # READER / WRITER METHODS
 # -----------------------------
 
+# Also referred to as GETTER/SETTER methods
+# Used to Get a value, and set a value
 
 
 
+class Animal3
 
+  # WRITER / SETTER METHOD
+  # Set the noise attribute & hold it int the @noise instance variable
+  def set_noise(the_noise)
+    @noise = the_noise
+  end
+
+  # READER / GETTER METHOD
+  # Return the noise from @noise
+  def get_noise
+    @noise
+  end
+
+
+end
+
+
+# Create a new instance of the Animal class
+cow = Animal3.new
+
+# Set the noise for this instance
+cow.set_noise('Moo!')
+
+# Return the noise for this instance
+puts cow.get_noise
 
 
 
