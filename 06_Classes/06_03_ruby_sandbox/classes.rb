@@ -1,26 +1,32 @@
 
-
 class Animal
 
+  # Set the noise attribute & hold it int the @noice instance variable
   def set_noise(the_noise)
-    return @noise = the_noise
+    @noise = the_noise
   end
 
-
+  # Return the noise from @noise
   def make_noise
-    return @noise
+    @noise
   end
+
 
 end
+
 
 line_break = "------------------------------"
 puts line_break
 
-
+# Create a new instance of the Animal class
 cow = Animal.new
-puts "cow"
+# Console Log - Tell me which object I'm looking at
+puts 'cow'
+# Console Log - Return the object Identifier
 puts cow
-cow.set_noise("Moo!")
+# Set the noise for this instance
+cow.set_noise('Moo!')
+# Return the noise for this instance
 puts cow.make_noise
 
 

@@ -74,12 +74,16 @@ cow.make_noise.upcase
 
 # Attributes are values that persist inside of an object/instance of a class
 
-# Class is like a table definition (but way more than that)
+# Class is like a table definition (but more than that)
 # Instance is like a record
 # Attributes are like fields
 
 
 # Instance variables ( @variable ) are used to store attributes of objects
+
+
+
+
 
 
 
