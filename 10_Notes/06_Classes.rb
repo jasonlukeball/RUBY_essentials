@@ -78,8 +78,43 @@ cow.make_noise.upcase
 # Instance is like a record
 # Attributes are like fields
 
-
 # Instance variables ( @variable ) are used to store attributes of objects
+
+
+class Animal2
+
+  # Set the noise attribute & hold it int the @noise instance variable
+  def set_noise(the_noise)
+    @noise = the_noise
+  end
+
+  # Return the noise from @noise
+  def make_noise
+    @noise
+  end
+
+
+end
+
+
+# Create a new instance of the Animal class
+cow = Animal2.new
+
+# Set the noise for this instance
+cow.set_noise('Moo!')
+
+# Return the noise for this instance
+puts cow.make_noise
+
+
+
+
+# -----------------------------
+# READER / WRITER METHODS
+# -----------------------------
+
+
+
 
 
 

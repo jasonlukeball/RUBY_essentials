@@ -1,6 +1,7 @@
+
 class Animal
-  def set_noise(noise)
-    @noise = noise
+  def set_noise(the_noise)
+    @noise = the_noise
   end
   
   def make_noise
@@ -8,10 +9,10 @@ class Animal
   end
 end
 
-animal1 = Animal.new
-animal1.set_noise("Moo!")
-puts animal1.make_noise
+cow = Animal.new
+cow.set_noise("Moo!")
+puts cow.make_noise
 
-animal2 = Animal.new
-animal2.set_noise("Quack!")
-puts animal2.make_noise
+dog = Animal.new
+dog.set_noise("Woof!")
+puts dog.make_noise

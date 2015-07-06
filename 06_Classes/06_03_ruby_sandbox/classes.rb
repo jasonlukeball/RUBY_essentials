@@ -1,7 +1,7 @@
 
 class Animal
 
-  # Set the noise attribute & hold it int the @noice instance variable
+  # Set the noise attribute & hold it int the @noise instance variable
   def set_noise(the_noise)
     @noise = the_noise
   end
