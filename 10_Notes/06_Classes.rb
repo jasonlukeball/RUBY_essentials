@@ -278,7 +278,7 @@ puts jason.dob
 # When we want to create an instance of a class, very often you want to do some initial setup of that object
 # Setting some default values, or calling some default values, that will happen right at the beginning
 
-# When Class.new is called, so is the initialize method
+# When Class.new is called, the initialize method is called Automatically
 
 def initialize
   # Do some setup stuff
@@ -310,6 +310,7 @@ puts "Job 2: #{job2.uid}"
 # -----------------------------
 # CLASS METHODS
 # -----------------------------
+
 
 
 
