@@ -147,6 +147,89 @@ puts cow.get_noise
 
 
 
+# -----------------------------
+# ATTRIBUTE METHODS
+# -----------------------------
+
+
+# Commonly referred to as attr_* methods
+
+# These are a shorthand way of writing the reader/writer methods above
+
+
+# attr_reader
+# Creates a reader method
+
+
+# attr_writer
+# Creates a writer method
+
+
+# attr_accessor
+# Creates both a reader and writer method
+
+
+# Example: The shorthand automatically created this for us
+
+=begin
+
+  # -------------
+  # READER METHOD
+  # -------------
+
+  # Shorthand
+
+  attr_reader :name
+
+  # Long way
+
+  def name
+    # Return name
+    @name
+  end
+
+  # -------------
+  # WRITER METHOD
+  # -------------
+
+  # Shorthand
+
+  attr_writer :name
+
+  # Long way
+
+  def name=(value)
+    @name = value
+  end
+
+
+  # -------------
+  # ACCESSOR
+  # -------------
+
+  # Automatically creates a reader and writer for us
+
+  # Shorthand
+
+  attr_accessor :name
+
+  # Long way
+
+  def name
+    # Return name
+    @name
+  end
+
+  def name=(value)
+    @name = value
+  end
+
+
+=end
+
+
+
+
 
 
 # -----------------------------
