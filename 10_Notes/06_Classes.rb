@@ -272,12 +272,64 @@ puts jason.dob
 
 
 # -----------------------------
-#
+# INITIALIZE METHODS
+# -----------------------------
+
+# When we want to create an instance of a class, very often you want to do some initial setup of that object
+# Setting some default values, or calling some default values, that will happen right at the beginning
+
+# When Class.new is called, so is the initialize method
+
+def initialize
+  # Do some setup stuff
+end
+
+
+class Job
+  # Setup reader/writer methods for 'uid' attribute
+  attr_accessor :uid
+
+  # Set defaults on instance creation
+  def initialize
+    @uid = 101
+  end
+
+end
+
+# Create a new record instance
+job1 = Job.new
+
+# Get the uid for job1
+puts "Job 1: #{job1.uid}"
+
+job2 = Job.new
+puts "Job 2: #{job2.uid}"
+
+
+
+# -----------------------------
+# CLASS METHODS
 # -----------------------------
 
 
 
 
 # -----------------------------
-#
+# CLASS ATTRIBUTES
+# -----------------------------
+
+# -----------------------------
+# CLASS READER/WRITER METHODS
+# -----------------------------
+
+# -----------------------------
+# INHERITANCE
+# -----------------------------
+
+# -----------------------------
+# SUBCLASS OVERRIDING
+# -----------------------------
+
+# -----------------------------
+# ACCESSING THE SUPERCLASS
 # -----------------------------
