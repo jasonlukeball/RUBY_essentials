@@ -1,35 +1,34 @@
+
 class Animal
-  attr_accessor :name
-  attr_writer :color
-  attr_reader :legs, :arms
-  
-  def initialize(noise, legs=4, arms=0)
+
+
+  # ------------------
+  # ATTRIBUTE METHODS
+  # ------------------
+  attr_accessor :noise
+  attr_accessor :color
+
+  # ------------------
+  # CLASS METHODS
+  # ------------------
+  def self.all_species
+    ['cat','cow','dog','duck','horse','pig',]
+  end
+
+  # ------------------
+  # INSTANCE METHODS
+  # ------------------
+  def initialize(noise)
     @noise = noise
-    @legs = legs
-    @arms = arms
-    puts "A new animal has been instantiated."
+    puts '-----------------------------------'
+    puts 'A new animal has been instantiated.'
+    puts '-----------------------------------'
   end
-  
-  def noise=(noise)
-    @noise = noise
-  end
-  
-  def noise
-    @noise
-  end
-  
-  def color
-    "The color is #{@color}."
-  end
+
+
 end
 
-animal1 = Animal.new("Moo!", 4, 0)
-animal1.name = "Steve"
-puts animal1.name
-animal1.color = "black"
-puts animal1.color
-puts animal1.legs
-puts animal1.noise
 
-animal2 = Animal.new("Quack!")
-puts animal2.noise
+
+duck = Animal.new('Quack!')
+puts duck.noise
