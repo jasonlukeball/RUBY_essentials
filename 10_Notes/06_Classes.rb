@@ -507,8 +507,8 @@ puts FarmAnimal3.all_species.inspect
 # INHERITANCE
 # -----------------------------
 
-
-
+# Refers to inheriting the methods and attributes of another class
+# Objects created can be a 'subclass' (or child) of a 'superclass' (parent)
 
 
 # -----------------------------

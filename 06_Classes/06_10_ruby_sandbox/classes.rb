@@ -1,63 +1,65 @@
+
 class Animal
+
+
+  # -----------------------------
+  # INSTANCE ATTRIBUTE ACCESSORS
+  # -----------------------------
+
   attr_accessor :name
-  attr_writer :color
-  attr_reader :legs, :arms
+  attr_accessor :color
+  attr_accessor :noise
+
+  # -----------------------------
+  # CLASS VARIABLES
+  # -----------------------------
 
   @@species = ['cat', 'cow', 'dog', 'duck', 'horse', 'pig']
   @@current_animals = []
-  
+
+  # -----------------------------
+  # CLASS METHODS
+  # -----------------------------
+
+  # Reader for @@species class variable
   def self.species
     @@species
   end
-  
+  # Writer for @@species class variable
   def self.species=(array=[])
     @@species = array
   end
-  
+  # Reader for @@current_animals class variable
   def self.current_animals
     @@current_animals
   end
-  
+
+  # -----------------------------
+  # INSTANCE METHODS
+  # -----------------------------
+
+  # Create new with attributes method
   def self.create_with_attributes(noise, color)
     animal = self.new(noise)
     animal.color = color
     return animal
   end
-  
-  def initialize(noise, legs=4, arms=0)
+  # Initialize Method
+  def initialize(noise)
     @noise = noise
-    @legs = legs
-    @arms = arms
+    # Append to @@current_animals
     @@current_animals << self
-    puts "A new animal has been instantiated."
+    puts '-----------------------------------'
+    puts 'A new animal has been instantiated.'
+    puts '-----------------------------------'
   end
   
-  def noise=(noise)
-    @noise = noise
-  end
-  
-  def noise
-    @noise
-  end
-  
-  def color
-    "The color is #{@color}."
-  end
+
 end
 
-Animal.species = ['frog', 'fish']
-puts Animal.species.inspect
 
-animal1 = Animal.new("Moo!", 4, 0)
-animal1.name = "Steve"
-puts animal1.name
-animal1.color = "black"
-puts animal1.color
-puts animal1.legs
-puts animal1.noise
 
-animal2 = Animal.create_with_attributes("Quack!", "white")
-puts animal2.noise
-puts animal2.color
 
-puts Animal.current_animals.inspect
+duck = Animal.create_with_attributes('Quack!', 'white')
+puts duck.inspect
+
