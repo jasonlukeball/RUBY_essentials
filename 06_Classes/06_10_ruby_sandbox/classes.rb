@@ -57,9 +57,30 @@ class Animal
 
 end
 
+# Define a subclass 'Duck'
+# '<' indicates this is a subclass of Animal
 
+class Duck < Animal
 
+end
 
-duck = Animal.create_with_attributes('Quack!', 'white')
-puts duck.inspect
+# Duck class inherits all methods in Animal
+# We're passing it a 'noise' here to the 'initialize' method in Aninal
+
+donald = Duck.new('Quack!')
+puts donald
+puts donald.noise
+
+# Created using Animal Class
+donald2 = Animal.create_with_attributes('Quack!', 'white')
+puts donald2.inspect
+
+puts donald.class
+# => Duck
+# From Duck Class
+
+puts donald2.class
+# => Animal
+# From Animal Class
+
 

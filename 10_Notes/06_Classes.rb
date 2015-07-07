@@ -510,10 +510,31 @@ puts FarmAnimal3.all_species.inspect
 # Refers to inheriting the methods and attributes of another class
 # Objects created can be a 'subclass' (or child) of a 'superclass' (parent)
 
+# Define a subclass 'Duck'
+# '<' indicates this is a subclass of Animal
+
+class Duck < Animal
+
+end
+
+# Duck class inherits all methods in Animal
+# We're passing it a 'noise' here to the 'initialize' method in Aninal
+
+donald = Duck.new('Quack!')
+puts donald
+puts donald.noise
+
+puts donald.class
+# => Duck
+# From Duck Class
+
 
 # -----------------------------
 # SUBCLASS OVERRIDING
 # -----------------------------
+
+
+
 
 # -----------------------------
 # ACCESSING THE SUPERCLASS
