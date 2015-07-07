@@ -312,12 +312,15 @@ puts "Job 2: #{job2.uid}"
 # -----------------------------
 
 # Class Methods are methods which are called on the class
+# Class methods are named self.method_name
 # Person.new ( .new is a class method )
 # Convention is to put class methods above the instance methods
 
 def self.method_name
   # ...
 end
+
+
 
 
 
