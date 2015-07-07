@@ -1,54 +1,32 @@
-class Animal
-  attr_accessor :name
-  attr_writer :color
-  attr_reader :legs, :arms
+class FarmAnimal3
 
-  @@species = ['cat', 'cow', 'dog', 'duck', 'horse', 'pig']
-  @@current_animals = []
-  
+  # ------------------
+  # CLASS VARIABLE
+  # ------------------
+  @@all_species = ['cat','cow','dog','duck','horse','pig',]
+
+  # ------------------
+  # CLASS METHODS
+  # ------------------
+
+  # Reader method for @@all_species class variable
   def self.all_species
-    @@species
+    @@all_species
   end
-  
-  def self.create_with_attributes(noise, color)
-    animal = self.new(noise)
-    animal.color = color
-    return animal
+
+  # Writer method for @@all_species class variable
+  def self.all_species=(array=[])
+    @@all_species = array
   end
-  
-  def initialize(noise, legs=4, arms=0)
-    @noise = noise
-    @legs = legs
-    @arms = arms
-    @@current_animals << self
-    puts "A new animal has been instantiated."
-  end
-  
-  def noise=(noise)
-    @noise = noise
-  end
-  
-  def noise
-    @noise
-  end
-  
-  def color
-    "The color is #{@color}."
-  end
+
 end
 
-puts Animal.all_species.inspect
 
-animal1 = Animal.new("Moo!", 4, 0)
-animal1.name = "Steve"
-puts animal1.name
-animal1.color = "black"
-puts animal1.color
-puts animal1.legs
-puts animal1.noise
+# Output the @@all_species class variable
+puts FarmAnimal3.all_species.inspect
 
-animal2 = Animal.create_with_attributes("Quack!", "white")
-puts animal2.noise
-puts animal2.color
+# Set the @@all_species class variable
+FarmAnimal3.all_species = ['jason','msh']
 
-puts Animal.current_animals.inspect
+# Output the @@all_species class variable (again)
+puts FarmAnimal3.all_species.inspect

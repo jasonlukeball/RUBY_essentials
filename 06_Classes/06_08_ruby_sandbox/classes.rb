@@ -30,6 +30,7 @@ class FarmAnimal2
     return animal # This is not really needed
   end
 
+  # Reader method for current_animals
   def self.current_animals
     @@current_animals
   end
