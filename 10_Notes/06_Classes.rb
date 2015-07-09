@@ -532,6 +532,8 @@ puts donald.class
 # SUBCLASS OVERRIDING
 # -----------------------------
 
+# Used when you want to inherit some things from the superclass, but not others
+# This is done by overriding methods in the subclass
 
 
 
