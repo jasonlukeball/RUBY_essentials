@@ -1,78 +1,116 @@
 class Animal
+
+
+  # -----------------------------
+  # INSTANCE ATTRIBUTE ACCESSORS
+  # -----------------------------
+
   attr_accessor :name
-  attr_writer :color
-  attr_reader :legs, :arms
+  attr_accessor :color
+  attr_accessor :noise
+
+  # -----------------------------
+  # CLASS VARIABLES
+  # -----------------------------
 
   @@species = ['cat', 'cow', 'dog', 'duck', 'horse', 'pig']
   @@current_animals = []
-  
+
+  # -----------------------------
+  # CLASS METHODS
+  # -----------------------------
+
+  # Reader for @@species class variable
   def self.species
     @@species
   end
-  
+  # Writer for @@species class variable
   def self.species=(array=[])
     @@species = array
   end
-  
+  # Reader for @@current_animals class variable
   def self.current_animals
     @@current_animals
   end
-  
+
+  # -----------------------------
+  # INSTANCE METHODS
+  # -----------------------------
+
+  # Create new with attributes method
   def self.create_with_attributes(noise, color)
     animal = self.new(noise)
     animal.color = color
     return animal
   end
-  
-  def initialize(noise, legs=4, arms=0)
+  # Initialize Method
+  def initialize(noise)
     @noise = noise
-    @legs = legs
-    @arms = arms
+    # Append to @@current_animals
     @@current_animals << self
-    puts "A new animal has been instantiated."
+    puts '-----------------------------------'
+    puts 'A new animal has been instantiated.'
+    puts '-----------------------------------'
   end
-  
-  def noise=(noise)
-    @noise = noise
+
+  def get_color_info
+    "The Animal's color is #{@color}"
   end
-  
-  def noise
-    @noise
-  end
-  
-  def color
-    "The color is #{@color}."
-  end
+
+
 end
 
-class Cow < Animal
-  def color
-    "The cow's color is #{@color}."
+
+# Define a subclass 'Duck'
+# Duck class inherits all methods in Animal
+
+class Duck < Animal
+
+  # This overwrites the get_color_info in the Animal class
+  def get_color_info
+    "The Duck's color is #{@color}"
   end
-  def color # second definition replaces the first
-    "My color is #{@color}."
-  end
+
 end
 
-Animal.species = ['frog', 'fish']
-puts Animal.species.inspect
 
-animal1 = Animal.new("Moo!", 4, 0)
-animal1.name = "Steve"
-puts animal1.name
-animal1.color = "black"
-puts animal1.color
-puts animal1.legs
-puts animal1.noise
+# Define a subclass 'Tiger'
+class Tiger < Animal
 
-animal2 = Animal.create_with_attributes("Quack!", "white")
-puts animal2.noise
-puts animal2.color
+  # Override the superclass (parent class) get_color_info method
+  def get_color_info
+    # the word 'super' calls the parent method
+    "The Tiger's color is #{@color}" + "\n" + super
+    # The Tiger's color is Yellow
+    # The Animal's color is Yellow
 
-puts Animal.current_animals.inspect
+  end
 
-maisie = Cow.create_with_attributes("Moo!", "yellow")
-puts maisie.noise
-puts animal1.class
-puts maisie.class
-puts maisie.color
+end
+
+
+# Created using Animal Class
+donald = Animal.create_with_attributes('Quack!', 'White')
+puts donald
+puts "#{donald.class} class"
+# => Animal class
+puts donald.get_color_info
+# => The Animal's color is White
+
+
+# Created using Duck Class
+donald_duck = Duck.create_with_attributes('Quack!', 'White')
+puts donald_duck
+puts "#{donald_duck.class} class"
+# => Animal class
+puts donald_duck.get_color_info
+# => The Duck's color is White
+
+
+# Created using Tiger Class
+tony = Tiger.create_with_attributes('Roar!', 'Yellow')
+puts tony
+puts "#{tony.class} class"
+# => Tiger class
+puts tony.get_color_info
+# => The Tiger's color is Yellow
