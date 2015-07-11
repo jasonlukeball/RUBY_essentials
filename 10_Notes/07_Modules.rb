@@ -94,11 +94,17 @@ puts mr_smith.full_name
 
 # Ways to load modules into Ruby
 
+# --------
 # LOAD
+# --------
 # loads in a source file every time it is called
 
+# --------
 # REQUIRE
+# --------
 # loads the source file only once, and knows it has been loaded
 
+# --------
 # INCLUDE
+# --------
 # is used ONLY to include modules, has NOTHING to do with loading files
