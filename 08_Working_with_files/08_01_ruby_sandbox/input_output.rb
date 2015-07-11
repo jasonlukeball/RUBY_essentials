@@ -5,14 +5,13 @@ input = gets.chomp
 
 # print: outputs a string with no line return
 # puts: outputs a string with a line return
-print "You just told me: "
-puts input + "."
+print "You just told me: " +input + "."
 
 
 # Use gets inside a loop for more user input
 result = ""
 until result == "quit"
-  print "> "
+  print " > "
   result = gets.chomp
   puts "I heard: #{result}"
 end
