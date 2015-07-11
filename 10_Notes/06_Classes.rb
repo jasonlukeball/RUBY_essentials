@@ -38,7 +38,7 @@ Animal.new
 # => #<Animal:0x007f8cec171440>
 
 cow = Animal.new
-# Cow is an instance on the Animal Object
+# Cow is an instance of the Animal Object
 # Another new Animal object
 # => #<Animal:0x007f8cec16a500>
 
@@ -89,7 +89,7 @@ class Animal2
   end
 
   # Return the noise from @noise
-  def make_noise
+  def get_noise
     @noise
   end
 
@@ -104,7 +104,7 @@ cow = Animal2.new
 cow.set_noise('Moo!')
 
 # Return the noise for this instance
-puts cow.make_noise
+puts cow.get_noise
 
 
 
@@ -114,14 +114,14 @@ puts cow.make_noise
 # -----------------------------
 
 # Also referred to as GETTER/SETTER methods
-# Used to Get a value, and set a value
+# Used to Get a value/attribute, and set a value/attribute
 
 
 
 class Animal3
 
   # WRITER / SETTER METHOD
-  # Set the noise attribute & hold it int the @noise instance variable
+  # Set the noise attribute & hold it in the @noise instance variable
   def set_noise(the_noise)
     @noise = the_noise
   end
@@ -153,17 +153,13 @@ puts cow.get_noise
 
 
 # Commonly referred to as attr_* methods
-
-# These are a shorthand way of writing the reader/writer methods above
-
+# These are the shorthand way of writing the reader/writer methods above
 
 # attr_reader
 # Creates a reader method
 
-
 # attr_writer
 # Creates a writer method
-
 
 # attr_accessor
 # Creates both a reader and writer method
@@ -184,7 +180,7 @@ puts cow.get_noise
   # Long way
 
   def name
-    # Return name
+    # return name
     @name
   end
 
@@ -216,7 +212,7 @@ puts cow.get_noise
   # Long way
 
   def name
-    # Return name
+    # return name
     @name
   end
 
@@ -275,7 +271,7 @@ puts jason.dob
 # INITIALIZE METHODS
 # -----------------------------
 
-# When we want to create an instance of a class, very often you want to do some initial setup of that object
+# When you want to create a new instance of a class, very often you want to do some initial setup of that object
 # Setting some default values, or calling some default values, that will happen right at the beginning
 
 # When Class.new is called, the initialize method is called Automatically
@@ -327,8 +323,7 @@ class FarmAnimal
   # ------------------
   # ATTRIBUTE METHODS
   # ------------------
-  attr_accessor :noise
-  attr_accessor :color
+  attr_accessor :noise, :color
 
   # ------------------
   # CLASS METHODS
@@ -378,7 +373,7 @@ FarmAnimal.create_with_attributes('Woof','Black')
 # CLASS ATTRIBUTES
 # -----------------------------
 
-# Class attributes are used to store values that apple to the class generally
+# Class attributes are used to store values that apply to the class generally
 # Class attributes are stored in class variables ( @@variable )
 
 
@@ -388,8 +383,7 @@ class FarmAnimal2
   # ------------------
   # ATTRIBUTE METHODS
   # ------------------
-  attr_accessor :noise
-  attr_accessor :color
+  attr_accessor :noise, :color
 
   # ------------------
   # CLASS VARIABLE
@@ -417,8 +411,6 @@ class FarmAnimal2
   def self.current_animals
     @@current_animals
   end
-
-
 
   # ------------------
   # INSTANCE METHODS
@@ -480,12 +472,12 @@ class FarmAnimal3
   # CLASS METHODS
   # ------------------
 
-  # Reader method for @@all_species class variable
+  # Class Reader method for @@all_species class variable
   def self.all_species
     @@all_species
   end
 
-  # Writer method for @@all_species class variable
+  # Class Writer method for @@all_species class variable
   def self.all_species=(array=[])
     @@all_species = array
   end
