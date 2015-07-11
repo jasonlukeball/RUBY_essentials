@@ -85,5 +85,20 @@ mr_smith.last_name = "Smith"
 puts mr_smith.full_name
 
 
+# --------------------------
+# LOAD, REQUIRE & INCLUDE
+# --------------------------
 
+# Modules are usually kept in separate files
+# Module files serve as code libraries, which are pulled in when required
 
+# Ways to load modules into Ruby
+
+# LOAD
+# loads in a source file every time it is called
+
+# REQUIRE
+# loads the source file only once, and knows it has been loaded
+
+# INCLUDE
+# is used ONLY to include modules, has NOTHING to do with loading files

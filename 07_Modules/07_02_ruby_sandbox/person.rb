@@ -30,12 +30,14 @@ end
 class Teacher
   # Include the ContactInfo Module, it's object accessors and it's methods
   include ContactInfo
+  attr_accessor :lesson_plans
 end
 
 
 class Student
   # Include the ContactInfo Module, it's object accessors and it's methods
   include ContactInfo
+  attr_accessor :books, :grades
 end
 
 

@@ -1,27 +1,27 @@
-module ContactInfo
-  attr_accessor :first_name, :last_name, :city, :state, :zip_code
 
-  def full_name
-    return @first_name + " " + @last_name
-  end
+# Before we can include ContactInfo, Ruby needs to know about ContactInfo
 
-  def city_state_zip
-    csz = @city
-    csz += ", #{@state}" if @state
-    csz += "  #{@zip_code}" if @zip_code
-    return csz
-  end
-end
+# Require loads the file only once
+require '/Users/jason_ball/Dropbox/Dev/RUBY/RUBY_essentials/exercise_files/07_Modules/07_03_ruby_sandbox/person_contact_info_module.rb'
+
 
 class Person
   include ContactInfo
 end
+
 
 class Teacher
   include ContactInfo
   attr_accessor :lesson_plans
 end
 
+
 class Student < Person
   attr_accessor :books, :grades
 end
+
+
+jason = Person.new
+jason.first_name = "Jason"
+jason.last_name = "Ball"
+puts jason.full_name
