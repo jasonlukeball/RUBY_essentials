@@ -29,16 +29,79 @@ input = gets.chomp
 # => "\"Hello Ruby!\""
 # No line breaks
 
+# gets: waits for user input--a single line ending in a return
+# chomp: removes any line ending ("\n", "\r", "\r\n")
+# chop: would remove ANY final character (chomp is usually better)
+input = gets.chomp
+
+# print: outputs a string with no line return
+# puts: outputs a string with a line return
+print "You just told me: " +input + "."
+
+
+# Use gets inside a loop for more user input
+result = ""
+until result == "quit"
+  print " > "
+  result = gets.chomp
+  puts "I heard: #{result}"
+end
+puts "Goodbye!"
+
 
 # --------------------------
 # FILE SYSTEM BASICS
 # --------------------------
 
+# File Paths
+# --------------------------
+
+File.join('shared','lib','my_file.rb')
+# Returns shared/lib/my_file.rb (Unix/OSX)
+# Returns shared\lib\my_file.rb (windows)
+
+# File Permissions (Unix)
+# --------------------------
+
+# chmod -   change permissions
+# chown -   change file owner
 
 
 # --------------------------
 # FILE PATHS
 # --------------------------
+
+# Absolute path
+# --------------------------
+# /Users/jason_ball/Dropbox/Dev/RUBY/RUBY_essentials/exercise_files/10_Notes/08_Working with Files.rb
+
+# Use forward slashes, even on Windows
+puts "/Users/kevin/Desktop/ruby_sandbox"
+# File.join ensures platform independence
+puts File.join('', 'Users', 'kevin', 'Desktop', 'ruby_sandbox')
+
+
+# Relative path
+# --------------------------
+# 08_Working with Files.rb
+
+# ..      move to parent directory
+# .       current directory
+
+# __FILE__ is THIS file
+puts __FILE__
+
+# expand_path will convert a relative path to an absolute path
+# in this case, it returns the full path the file
+puts File.expand_path(__FILE__)
+
+# relative paths are easiest when you start with
+# this file's directory
+puts File.dirname(__FILE__)
+
+# .. "moves back" one directory
+puts File.join(File.dirname(__FILE__), '..', "Exercise\ Files")
+
 
 # --------------------------
 # ACCESSING FILES
