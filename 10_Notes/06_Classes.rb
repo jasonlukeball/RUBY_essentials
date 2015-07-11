@@ -500,8 +500,8 @@ puts FarmAnimal3.all_species.inspect
 # -----------------------------
 
 # Refers to inheriting the methods and attributes of another class
-# Objects created can be a 'subclass' (or child) of a 'superclass' (parent)
-# In Ruby a subclass can inherit methods and attributes from one and only one superclass (parent class)
+# Objects created can be from a 'subclass' (or child) of a 'superclass' (parent)
+# In Ruby a subclass will inherit methods and attributes from one and only one superclass (parent class)
 
 # Define a subclass 'Duck'
 # '<' indicates this is a subclass of Animal
@@ -534,9 +534,7 @@ class Animal
   # INSTANCE ATTRIBUTE ACCESSORS
   # -----------------------------
 
-  attr_accessor :name
-  attr_accessor :color
-  attr_accessor :noise
+  attr_accessor :name, :color, :noise
 
   # -----------------------------
   # CLASS VARIABLES
@@ -616,7 +614,7 @@ puts donald.get_color_info
 donald_duck = Duck.create_with_attributes('Quack!', 'White')
 puts donald_duck
 puts "#{donald_duck.class} class"
-# => Animal class
+# => Duck class
 puts donald_duck.get_color_info
 # => The Duck's color is White
 
@@ -741,3 +739,4 @@ puts "#{tony.class} class"
 # => Tiger class
 puts tony.get_color_info
 # => The Tiger's color is Yellow
+# => The Animal's color is Yellow
