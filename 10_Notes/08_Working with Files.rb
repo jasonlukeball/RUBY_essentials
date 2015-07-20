@@ -189,13 +189,32 @@ File.open("test_file.txt", "r") do |file|
 end
 
 
+
 # --------------------------
 # FILE POINTER
 # --------------------------
 
+
+file.pos
+# Returns the position of the file pointer, where we are in the file
+
+file.eof?
+# Is End Of File?
+# Returns true or false
+
+file.rewind
+# Takes you back to the beginning of the file
+# Same as file.pos = 0
+
+
+
 # --------------------------
 # RENAMING & DELETING FILES
 # --------------------------
+
+
+
+
 
 # --------------------------
 # WORKING WITH DIRECTORIES
