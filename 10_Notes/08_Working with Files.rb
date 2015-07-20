@@ -237,6 +237,14 @@ FileUtils.cp("test.txt","test2.txt")
 # --------------------------
 
 
+
+
+
+# --------------------------
+# EXAMINING FILE DETAILS
+# --------------------------
+
+
 File.new("test.txt", "w")
 # => #<File:test.txt>
 
@@ -288,10 +296,3 @@ File.ctime(file)
 # Do not use this
 # Last Status Change Timestamp
 # => 2015-07-20 16:46:58 +1000
-
-
-# --------------------------
-# EXAMINING FILE DETAILS
-# --------------------------
-
-
