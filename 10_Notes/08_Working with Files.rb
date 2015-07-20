@@ -173,6 +173,22 @@ file.close
 # READING FROM FILES
 # --------------------------
 
+# Open the file
+file = File.new("test_file.txt", "r")
+
+
+# Output a line from the file
+file.gets.chomp
+# Returns a line from the file
+# Each time this is run it returns the next line
+
+
+# Output the entire file, line by line
+File.open("test_file.txt", "r") do |file|
+  file.each_line {|line| puts line}
+end
+
+
 # --------------------------
 # FILE POINTER
 # --------------------------
