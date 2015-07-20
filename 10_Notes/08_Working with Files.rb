@@ -237,7 +237,61 @@ FileUtils.cp("test.txt","test2.txt")
 # --------------------------
 
 
+File.new("test.txt", "w")
+# => #<File:test.txt>
+
+file = File.new("test.txt", "w")
+# => #<File:test.txt>
+
+File.exists?(file)
+# => true
+
+File.file?(file)
+# => true
+
+File.directory?(file)
+# => false
+
+File.readable?(file)
+# => true
+
+File.writable?(file)
+# => true
+
+File.executable?(file)
+# => false
+
+File.size(file)
+# => 0
+
+File.dirname(file)
+# => "."
+
+File.expand_path(file)
+# => "/Users/jason_ball/test.txt"
+
+File.basename(file)
+# => "test.txt"
+
+File.extname(file)
+# => ".txt"
+
+File.atime(file)
+# Last Accessed Timestamp
+# => 2015-07-20 16:46:33 +1000
+
+File.mtime(file)
+# Modified Timestamp
+# => 2015-07-20 16:46:58 +1000
+
+File.ctime(file)
+# Do not use this
+# Last Status Change Timestamp
+# => 2015-07-20 16:46:58 +1000
+
 
 # --------------------------
 # EXAMINING FILE DETAILS
 # --------------------------
+
+
