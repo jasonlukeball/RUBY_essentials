@@ -213,12 +213,30 @@ file.rewind
 # --------------------------
 
 
+# Create a file
+File.new("file.txt", "w")
 
+# Rename the file
+File.rename("file.txt", "file_renamed.txt")
+
+# Delete the file
+File.delete("File_renamed.txt")
+
+
+# --------------------------
+# COPYING FILES
+# --------------------------
+
+# Must use fileutils to do this
+require 'fileutils'
+FileUtils.cp("test.txt","test2.txt")
 
 
 # --------------------------
 # WORKING WITH DIRECTORIES
 # --------------------------
+
+
 
 # --------------------------
 # EXAMINING FILE DETAILS
