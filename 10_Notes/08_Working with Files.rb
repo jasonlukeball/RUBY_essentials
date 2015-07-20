@@ -237,7 +237,66 @@ FileUtils.cp("test.txt","test2.txt")
 # --------------------------
 
 
+File.expand_path(File.dirname(__FILE__))
+# Returns current working directory
+# => "/Users/jason_ball/Desktop/my_dir"
 
+Dir.pwd
+# Print working directory
+# => "/Users/jason_ball/Desktop/my_dir"
+
+Dir.chdir("..")
+# Go up one directory
+# => 0
+
+Dir.pwd
+# Print working directory
+# => "/Users/jason_ball/Desktop"
+
+Dir.chdir(File.join("", "Users", "jason_ball", "desktop", "my_dir"))
+# Navigate to an explicit path
+# => 0
+
+Dir.pwd
+# Print working directory
+# => "/Users/jason_ball/Desktop/my_dir"
+
+Dir.entries(".")
+# List all files in current directory
+# => [".", "..", ".adobe", ".anyconnect", ".apdisk", ".atom", ".bash_history", ".bash_profile", ".bash_profile.save", ".bashrc", ".cache", ".CFUserTextEncoding", ".config", ".cordova", ".cups", ".DownloadManager", ".dropbox", ".dropbox-two", ".DS_Store", ".flexlmrc", ".gem", ".gitconfig", ".heroku", ".hushlogin", ".irb-history", ".itmstransporter", ".lesshst", ".local", ".mkshrc", ".mplayer", ".mysql_history", ".netrc", ".npm", ".odbcinst.ini", ".profile", ".putty", ".rnd", ".rvm", ".sqlite_history", ".ssh", ".subversion", ".swt", ".TemporaryItems", ".Trash", ".viminfo", ".wireshark", ".wireshark-etc", ".Xauthority", ".Xcode", ".zlogin", ".zshrc", "Applications", "Books", "Creative Cloud Files", "Desktop", "Development", "Documents", "Downloads", "Dropbox", "Google Drive", "InVision", "Library", "Movies", "Music", "Pictures", "Public", "Samsung", "Sites", "Software", "test.txt"]
+
+
+Dir.entries(".").each do |entry|
+  puts entry
+end
+
+# Print all files in current directory
+# Returns
+
+# .
+# ..
+# test_file1.txt
+# test_file2.txt
+# test_file3.txt
+
+Dir.foreach(".") {|entry| puts entry}
+# Alternative way to write
+=begin
+.
+..
+test_file1.txt
+test_file2.txt
+test_file3.txt
+=> nil
+=end
+
+Dir.mkdir('a_new_directory')
+# Creates a new directory
+# => 0
+
+Dir.delete('a_new_directory')
+# Deletes directory (must be empty or will error)
+# => 0
 
 
 # --------------------------
