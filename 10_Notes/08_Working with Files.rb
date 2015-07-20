@@ -107,9 +107,50 @@ puts File.join(File.dirname(__FILE__), '..', "Exercise\ Files")
 # ACCESSING FILES
 # --------------------------
 
+
+# Creating Files
+# --------------------------
+
+# Create a file, Instantiate a file object, give it instructions
+file = File.new('my_file.txt', 'w')
+# write data to the file
+file.close
+
+
+# Opening Files
+# --------------------------
+
+# Provide a file with a block of instructions
+File.open('my_file.txt', 'r') do |file|
+  # read data from the file
+end
+
+
+# Closing Files
+# --------------------------
+
+file.close
+
+
+# File Access Modes
+# --------------------------
+
+# r, w, a, r+, w+, a+
+
+# r     Read from start (file must already exist)
+# w     Truncate/Write from start (will overwrite if already exists)
+# a     Append/Write from the end
+# r+    Read/Write (file must already exist)
+
+
+
 # --------------------------
 # WRITING TO FILES
 # --------------------------
+
+
+
+
 
 # --------------------------
 # READING FROM FILES
