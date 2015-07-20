@@ -148,7 +148,24 @@ file.close
 # WRITING TO FILES
 # --------------------------
 
+# New File
+file = File.new("test_file.txt", "w")
+# Write to file
+file.puts "Hello from IRB"
 
+# Append to end of file
+file << "Hello again from IRB"
+
+# Append a return character
+file << "\n"
+
+# Close & Save file
+file.close
+
+# File looks like this:
+# 1 Hello from IRB
+# 2 Hello again from IRB
+# 3
 
 
 
